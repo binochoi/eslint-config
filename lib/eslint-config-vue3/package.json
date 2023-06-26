@@ -1,5 +1,5 @@
 {
-    "name": "@binochoi/eslint-vue3-config",
+    "name": "@binochoi/eslint-config-vue3",
     "version": "0.0.1",
     "main": "index.js",
 	"author": {
