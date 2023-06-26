@@ -1,0 +1,19 @@
+{
+    "name": "@binochoi/eslint-base-config",
+    "version": "0.0.1",
+    "main": "index.js",
+    "author": {
+        "name": "Bino Choi",
+        "email": "bonoself@gmail.com",
+        "url": "https://bino.blog"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.60.0",
+        "@typescript-eslint/parser": "^5.60.0",
+        "eslint-config-airbnb-base": "^15.0.0"
+    }
+}
