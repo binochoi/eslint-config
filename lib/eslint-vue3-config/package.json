@@ -11,7 +11,7 @@
         "access": "public",
         "registry": "https://registry.npmjs.org/"
     },
-    "dependencies": {
+    "peerDependencies": {
         "eslint-plugin-vue": "^9.15.1",
         "vue-eslint-parser": "^9.3.1"
     }
