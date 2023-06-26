@@ -1,5 +1,5 @@
 {
-    "name": "@binochoi/eslint-base-config",
+    "name": "@binochoi/eslint-typescript-config",
     "version": "0.0.1",
     "main": "index.js",
     "author": {
