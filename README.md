@@ -1,0 +1,1 @@
+eslint configs for my personal projects
