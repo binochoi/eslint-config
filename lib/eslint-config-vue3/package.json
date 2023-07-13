@@ -1,12 +1,12 @@
 {
     "name": "@binochoi/eslint-config-vue3",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "index.js",
-	"author": {
-		"name": "Bino Choi",
-		"email": "bonoself@gmail.com",
-		"url": "https://bino.blog"
-	},
+    "author": {
+        "name": "Bino Choi",
+        "email": "bonoself@gmail.com",
+        "url": "https://bino.blog"
+    },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/"
