@@ -1,6 +1,6 @@
 {
     "name": "@binochoi/eslint-config-vue3",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "main": "index.js",
     "author": {
         "name": "Bino Choi",
