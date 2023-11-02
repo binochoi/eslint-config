@@ -1,6 +1,6 @@
 {
     "name": "@binochoi/eslint-config-vue3",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "main": "index.js",
     "author": {
         "name": "Bino Choi",
@@ -11,7 +11,7 @@
         "access": "public",
         "registry": "https://registry.npmjs.org/"
     },
-    "peerDependencies": {
+    "dependencies": {
         "eslint-plugin-vue": "^9.15.1"
     }
 }
