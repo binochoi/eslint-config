@@ -6,7 +6,8 @@ on:
     branches:
       - main
     paths:
-      - './lib/eslint-config-typescript/*'
+      - './.github/workflows/publish_ts.yml'
+      - './lib/eslint-config-typescript/**'
 jobs:
   publish:
     runs-on: ubuntu-latest
