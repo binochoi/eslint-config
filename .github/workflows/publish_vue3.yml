@@ -7,13 +7,13 @@ on:
       - main
     paths:
       - '.github/workflows/publish_ts.yml'
-      - 'lib/eslint-config-typescript/**'
+      - 'lib/eslint-config-vue3/**'
 jobs:
   publish:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./lib/eslint-config-typescript
+        working-directory: ./lib/eslint-config-vue3
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
@@ -38,7 +38,7 @@ jobs:
         npm version patch
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: 'chore(package.json): update ts version'
+        commit_message: 'chore(package.json): update vue3 version'
     
     - name: Publish to NPM
       run: |
