@@ -39,7 +39,7 @@ jobs:
         npm version patch
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_author: Actions Bot
+        commit_author: Actions Bot <actions@github.com>
         commit_message: 'chore(package.json): update ts version'
     
     - name: Publish to NPM
