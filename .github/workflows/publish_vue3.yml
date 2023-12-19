@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Publish vue config
 on:
   push:
     # tags:
@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/publish_vue3.yml'
+      - '.github/workflows/publish_vue.yml'
       - 'lib/eslint-config-vue3/**'
       - '!lib/eslint-config-vue3/package.json'
 jobs:
@@ -39,7 +39,8 @@ jobs:
         npm version patch
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: 'chore(package.json): update vue3 version'
+        commit_author: Actions Bot <actions@github.com>
+        commit_message: 'chore(package.json): update vue version'
     
     - name: Publish to NPM
       run: |
