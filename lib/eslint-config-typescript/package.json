@@ -1,6 +1,6 @@
 {
     "name": "@binochoi/eslint-config-typescript",
-    "version": "0.0.20",
+    "version": "0.0.21",
     "main": "index.js",
     "author": {
         "name": "Bino Choi",
