@@ -1,0 +1,46 @@
+name: Publish to npm
+on:
+  push:
+    # tags:
+    #   - "*v"
+    branches:
+      - main
+    paths:
+      - './lib/eslint-config-typescript/*'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./lib/eslint-config-typescript
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    timeout-minutes: 8
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.PAT }}
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20
+        registry-url: 'https://registry.npmjs.org/'
+        
+    - name: global config
+      run: |
+        git config --global user.email "bonoself@gmail.com"
+        git config --global user.name "bino"
+      
+    - name: auto version update
+      run: |
+        npm version patch
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: 'chore(package.json): update version'
+    
+    - name: Publish to NPM
+      run: |
+        npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
