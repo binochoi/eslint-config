@@ -6,8 +6,9 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/publish_ts.yml'
+      - '.github/workflows/publish_vue3.yml'
       - 'lib/eslint-config-vue3/**'
+      - '!lib/eslint-config-vue3/package.json'
 jobs:
   publish:
     runs-on: ubuntu-latest
